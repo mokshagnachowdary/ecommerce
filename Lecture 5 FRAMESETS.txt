@@ -1,0 +1,17 @@
+
+
+<frameset cols = "30%, 40%, 30%">
+    <frame src = "F1.html"> name = "f1"></frame>
+        <frameset rows = "50%, 50%">
+        <frame src = "F2.html"> name = "f2`"></frame>
+            <frame src = "F3.html" name = "f3"></frame>
+    </frameset>
+
+</frameset>
+
+So yeah nothing else to really talk about in this lecture, it's pretty straight forward use the <frameset cols = "some %"></frameset cols> tag
+
+and also use
+ <frame src = "smth.html"> name = "smth"></frame>
+
+and use <frameset rowa = "some %"></frameset> tag for the rows 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><h2>MyShop</h2></div>
+   <nav>
+  <a href="product.html">Home</a>
+  <a href="mobile.html">Mobiles</a>
+  <a href="laptops.html">Laptops</a>
+  <a href="watches.html">Watches</a>
+  <a href="cart.html">Cart</a>
+</nav>
+
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Discover the Best Products For You</h1>
+    <p><h2>High-quality items put together all in one place</h2></p>
+    <a href="#products" class="btn"><h2>Shop Now</h2></a>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products" id="products">
+    <h1>Products on High Demand</h1>
+    <div class="products-container">
+      <div class="product-card">
+        <img src="razer.png" alt="Product 1">
+        <h3>RAZER Blackshark Headphones</h3>
+        <p>Amazing sound quality with durability!</p>
+        <span class="price">$69.99</span>
+        <button onclick="addToCart('RAZER Blackshark Headphones', 69.99)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="rog.png" alt="Product 2">
+        <h3>ROG ZEPHYRUS GAMING LAPTOP</h3>
+        <p>EQUIPPED WITH THE BEST POSSIBLE SPECIFICATIONS ON THE MARKET</p>
+        <span class="price">$3569.69</span>
+        <button onclick="addToCart('HyperX Alloy Origins', 69.69)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="blueyeti.png" alt="Product 3">
+        <h3>BLUEYETI Microphone</h3>
+        <p>The best Microphone for streaming and gaming!</p>
+        <span class="price">$420</span>
+        <button onclick="addToCart('BLUEYETI Microphone', 420)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+   <section class = "highlights">
+    <h2>Why Shop With Us?</h2>
+      <ul></ul>Wide range of high-quality products</li>
+      <ul></ul>Secure and easy checkout process</li>
+      <ul>Fast shipping and reliable customer service</li>
+    </ul>   
+  <!-- Put script at the END so functions exist before they're called -->
+  <script src="script.js"></script>
+</body>
+</html>

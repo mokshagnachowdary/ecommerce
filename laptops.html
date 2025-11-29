@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptops - MyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💻 Laptops</h1>
+    <nav>
+      <a href="product.html">Home</a>
+      <a href="mobile.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="watches.html">Watches</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="products-container">
+    <div class="product-card">
+      <img src="macbook.png" alt="MacBook Air M3">
+      <h3>MacBook Air M3</h3>
+      <p>Lightweight beast with 18-hour battery.</p>
+      <span class="price">$1499</span>
+      <button onclick="addToCart('MacBook Air M3', 1499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="legion.png" alt="Lenovo Legion 7i">
+      <h3>Lenovo Legion 7i</h3>
+      <p>RTX 4080 with 240Hz display for gamers.</p>
+      <span class="price">$2199</span>
+      <button onclick="addToCart('Lenovo Legion 7i', 2199)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="xps.png" alt="Dell XPS 15">
+      <h3>Dell XPS 15</h3>
+      <p>Elegant design with OLED display.</p>
+      <span class="price">$1799</span>
+      <button onclick="addToCart('Dell XPS 15', 1799)">Add to Cart</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

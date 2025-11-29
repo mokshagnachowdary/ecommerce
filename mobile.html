@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobiles - MyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📱 Mobiles</h1>
+    <nav>
+      <a href="product.html">Home</a>
+      <a href="mobile.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="watches.html">Watches</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="products-container">
+    <div class="product-card">
+      <img src="iphone.png" alt="iPhone 15 Pro">
+      <h3>iPhone 15 Pro</h3>
+      <p>Latest Titanium build, A17 Pro chip.</p>
+      <span class="price">$1199</span>
+      <button onclick="addToCart('iPhone 15 Pro', 1199)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="s23.png" alt="Samsung S23 Ultra">
+      <h3>Samsung S23 Ultra</h3>
+      <p>200 MP camera with Snapdragon 8 Gen 2.</p>
+      <span class="price">$1099</span>
+      <button onclick="addToCart('Samsung S23 Ultra', 1099)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Oneplus.png.png" alt="OnePlus 12">
+      <h3>OnePlus 12</h3>
+      <p>Fastest Android experience with sleek design.</p>
+      <span class="price">$899</span>
+      <button onclick="addToCart('OnePlus 12', 899)">Add to Cart</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

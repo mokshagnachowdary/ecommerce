@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validate(form){
+            if(Form1.t1.value == ""){
+                alert("Please enter your name");
+                return false;
+            }
+            if(Form1.email.value == ""){
+                alert("Enter an email");
+                return false;
+            }
+            if(Form1.p1.value == ""){
+                alert("Enter a password dumbass");
+                return false;
+            }
+            if(Form1.p2.value == ""){
+                alert("You must enter the password again");
+                return false;
+            }
+            if(Form1.p1.value != Form1.p2.value){
+                alert("Rey kojja make sure the passwords match");
+                return false;
+            }
+            if(Form1.mobile.value.length != 10){
+                alert("Enter a valid mobile number");
+                return false;
+            }
+        
+        }
+    </script>
+</head>
+<body>
+    <h1>Student Registeration Form</h1>
+   
+    <form name = "Form1">
+        Name: <input type = "text" name = "t1"><br><br>
+        Email: <input type = "email" name = "email"><br><br>
+        Password: <input type = "password" name = "p1"><br><br>
+        Re-enter Password: <input type = "password" name = "p2"><br><br>
+        Mobile No: <input type = "text" name = "mobile"><br><br>
+         <input type = "submit" name = "mobile" onclick = "return validate(this.form)">
+         <input type = "reset" value = "Reset">
+      
+
+
+    </form>
+    
+</body>
+</html>

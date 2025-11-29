@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watches - MyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⌚ Watches</h1>
+    <nav>
+      <a href="product.html">Home</a>
+      <a href="mobile.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="watches.html">Watches</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="products-container">
+    <div class="product-card">
+      <img src="applewatch.png" alt="Apple Watch Series 9">
+      <h3>Apple Watch Series 9</h3>
+      <p>Advanced health features and GPS.</p>
+      <span class="price">$499</span>
+      <button onclick="addToCart('Apple Watch Series 9', 499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="samsungwatch.png" alt="Galaxy Watch 6">
+      <h3>Galaxy Watch 6</h3>
+      <p>Fitness tracking with long battery life.</p>
+      <span class="price">$399</span>
+      <button onclick="addToCart('Galaxy Watch 6', 399)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="fossil.png" alt="Fossil Gen 6">
+      <h3>Fossil Gen 6</h3>
+      <p>Classic steel design with smart features.</p>
+      <span class="price">$329</span>
+      <button onclick="addToCart('Fossil Gen 6', 329)">Add to Cart</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

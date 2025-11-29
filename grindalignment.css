@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 17% 75%;
+    height: 100vh;
+    border: 2px solid #177683;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80%
+    order-bottom: 5px solid #ccc;
+    background-color: #d9f2e6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header h1 {
+    color: #2e7d32;
+    font-size: 2rem;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.7rem;
+}
+
+nav li {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+nav li:hover {
+    color: #1b5e20;
+}
+
+/* Main */
+main {
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    color: #2e7d32;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 1.5rem;
+    background-color: #66bb6a;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #57a55c;
+}
+
+/* Info section using grid (concept from your code) */
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #e8f5e9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #a5d6a7;
+    text-align: center;
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ccc;
+    background-color: #d9f2e6;
+    color: #2e7d32;
+    font-weight: bold;
+}
